@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Memory Card Game</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Memory <span>Game</span></h1>
+      <div class="controls">
+        <select id="size">
+          <option value="4">4×4</option>
+          <option value="6" selected>6×6</option>
+          <option value="8">8×8</option>
+        </select>
+        <button id="start">Start</button>
+        <button id="reset">Reset</button>
+        <div class="stats">
+          <div>Moves: <strong id="moves">0</strong></div>
+          <div>Pairs: <strong id="pairs">0</strong></div>
+          <div>Time: <strong id="time">0</strong>s</div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="grid" class="grid"></div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

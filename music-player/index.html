@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Music Player</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="player">
+    <div class="cover">
+      <div class="vinyl"></div>
+      <img id="coverImg" alt="cover"/>
+    </div>
+    <div class="info">
+      <h1 id="title">Title</h1>
+      <p id="artist">Artist</p>
+      <div class="progress"><input id="seek" type="range" min="0" max="100" value="0"/></div>
+      <div class="controls">
+        <button id="prev">⏮</button>
+        <button id="play">▶</button>
+        <button id="next">⏭</button>
+        <button id="mute">🔇</button>
+        <input id="vol" type="range" min="0" max="1" step="0.01" value="0.8"/>
+        <select id="speed">
+          <option value="1">1×</option>
+          <option value="1.25">1.25×</option>
+          <option value="1.5">1.5×</option>
+          <option value="2">2×</option>
+        </select>
+        <button id="shuffle">🔀</button>
+        <button id="repeat">🔁</button>
+      </div>
+      <div class="time"><span id="tcur">0:00</span> / <span id="tlen">0:00</span></div>
+    </div>
+    <aside class="playlist" id="playlist"></aside>
+  </div>
+  <audio id="audio"></audio>
+  <script src="script.js"></script>
+</body>
+</html>

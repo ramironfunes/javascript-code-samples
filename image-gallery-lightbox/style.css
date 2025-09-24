@@ -1,0 +1,21 @@
+
+*{box-sizing:border-box}
+html,body{margin:0;background:#0a0e18;color:#eef;font-family:Rubik,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+.hero{padding:18px;border-bottom:1px solid #182038;background:linear-gradient(180deg,#0b1224,#0a0e18)}
+h1{margin:0 0 6px 0}
+.filters{display:flex;gap:8px;flex-wrap:wrap}
+input,select,button{background:#0f172a;color:#eef;border:1px solid #1f2937;border-radius:10px;padding:10px;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:10px;max-width:1200px;margin:16px auto;padding:0 12px}
+.card{position:relative;border-radius:12px;overflow:hidden;border:1px solid #1b2438;cursor:zoom-in}
+.card img{width:100%;height:180px;object-fit:cover;display:block;filter:saturate(1.05)}
+.card .title{position:absolute;left:8px;bottom:8px;background:rgba(0,0,0,.5);padding:4px 8px;border-radius:8px;font-size:12px}
+.masonry{column-count:4;column-gap:12px;max-width:1200px;margin:16px auto;padding:0 12px}
+.masonry .card{display:inline-block;margin:0 0 12px;width:100%}
+.lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:grid;place-items:center;grid-template-columns:60px 1fr 60px}
+.lightbox.hidden{display:none}
+.lightbox img{max-width:90vw;max-height:80vh;border-radius:12px;border:1px solid #333}
+.lightbox #caption{position:fixed;bottom:24px;left:50%;transform:translateX(-50%);background:rgba(0,0,0,.6);padding:6px 12px;border-radius:8px}
+.lightbox button{background:#0f172a;color:#fff;border:1px solid #1f2937;border-radius:10px;padding:10px;cursor:pointer}
+#close{position:fixed;top:16px;right:16px;font-size:24px}
+.nav{font-size:24px}
+@media (max-width:900px){ .masonry{column-count:2} }

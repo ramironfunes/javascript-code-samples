@@ -1,0 +1,35 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Image Gallery Lightbox</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header class="hero">
+    <h1>Image Gallery</h1>
+    <div class="filters">
+      <input id="q" placeholder="Search by title..."/>
+      <select id="layout">
+        <option value="grid">Grid</option>
+        <option value="masonry">Masonry</option>
+      </select>
+      <button id="shuffle">Shuffle</button>
+    </div>
+  </header>
+  <main id="gallery" class="grid"></main>
+
+  <div id="lightbox" class="lightbox hidden">
+    <button id="close">×</button>
+    <button id="prev" class="nav">‹</button>
+    <img id="big" alt=""/>
+    <button id="next" class="nav">›</button>
+    <div id="caption"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+
+*{box-sizing:border-box}
+html,body{margin:0;background:#0f0f12;color:#eaeaf2;font-family:Poppins,system-ui,Segoe UI,Roboto,Arial,sans-serif}
+.player{max-width:1100px;margin:24px auto;display:grid;grid-template-columns:320px 1fr 280px;gap:16px;padding:0 12px}
+.cover{position:relative;background:#181820;border-radius:16px;overflow:hidden;border:1px solid #262633;height:320px;display:flex;align-items:center;justify-content:center}
+.cover img{max-width:100%;max-height:100%;opacity:.9}
+.vinyl{position:absolute;width:220px;height:220px;border-radius:50%;background:radial-gradient(#111 0,#111 40%,#333 41%,#111 42%);animation:spin 6s linear infinite;opacity:.15}
+@keyframes spin{to{transform:rotate(360deg)}}
+.info{background:#181820;border:1px solid #262633;border-radius:16px;padding:16px;display:flex;flex-direction:column;gap:10px}
+h1{margin:0}
+.controls{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+button,input,select{background:#111115;color:#eaeaf2;border:1px solid #2a2a36;border-radius:12px;padding:10px;cursor:pointer}
+.progress input[type="range"]{width:100%}
+.time{color:#9aa}
+.playlist{background:#181820;border:1px solid #262633;border-radius:16px;padding:12px;height:320px;overflow:auto}
+.track{display:grid;grid-template-columns:48px 1fr auto;gap:8px;align-items:center;padding:6px;border-radius:10px;cursor:pointer}
+.track img{width:48px;height:48px;border-radius:8px;object-fit:cover}
+.track:hover{background:#202030}
+.active{outline:2px solid #7c3aed}
