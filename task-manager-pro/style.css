@@ -1,0 +1,23 @@
+
+:root{ --bg:#0f172a; --panel:#111827; --text:#e5e7eb; --muted:#9ca3af; --accent:#22d3ee; --danger:#f87171; }
+html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif}
+header{max-width:900px;margin:24px auto;padding:0 12px}
+h1{margin:0 0 12px 0;font-weight:800}
+.pro{color:var(--accent)}
+.controls,.filters{display:flex;gap:8px;flex-wrap:wrap;margin:8px 0}
+input,select,button{background:#0b1020;color:var(--text);border:1px solid #1f2937;border-radius:8px;padding:10px}
+button{cursor:pointer}
+main{max-width:900px;margin:0 auto;padding:0 12px}
+.list{list-style:none;margin:12px 0 60px 0;padding:0;display:flex;flex-direction:column;gap:8px}
+.item{background:var(--panel);border:1px solid #1f2937;border-radius:12px;padding:12px;display:grid;grid-template-columns:28px 1fr auto;align-items:center;gap:10px}
+.item.dragging{opacity:.6;outline:2px dashed var(--accent)}
+.item .title{font-weight:600}
+.item .meta{color:var(--muted);font-size:12px}
+.badge{padding:2px 8px;border-radius:999px;border:1px solid #374151;font-size:12px}
+.badge.high{color:#fecaca;border-color:#fecaca}
+.badge.low{color:#a7f3d0;border-color:#a7f3d0}
+.actions{display:flex;gap:6px}
+.actions button{padding:6px 10px}
+footer{position:sticky;bottom:0;background:linear-gradient(#0f172a,rgba(15,23,42,.9));padding:12px;text-align:center;border-top:1px solid #1f2937}
+.editing{outline:2px solid var(--accent)}
+.completed .title{text-decoration:line-through;color:var(--muted)}

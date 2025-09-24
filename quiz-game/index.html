@@ -1,0 +1,36 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Quiz Game</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Quiz <span>Game</span></h1>
+    <div class="controls">
+      <button id="start">Start</button>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+      <button id="reset">Reset</button>
+    </div>
+  </header>
+  <main>
+    <section id="screen" class="card">
+      <p>Press <strong>Start</strong> to begin.</p>
+    </section>
+    <section id="scoreBoard" class="card">
+      <div>Score: <strong id="score">0</strong></div>
+      <div>Question: <strong id="qnum">0</strong>/<span id="qtotal">0</span></div>
+      <div>Timer: <strong id="timer">0</strong>s</div>
+    </section>
+  </main>
+  <footer><small>JSON questions • timer • difficulty • scoring</small></footer>
+  <script src="script.js"></script>
+</body>
+</html>
